@@ -1,0 +1,2 @@
+GET http://localhost:3000/cars
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJib25kIjoiMDA3IiwiaXAiOiI6OmZmZmY6MTI3LjAuMC4xIiwiaWF0IjoxNTMwMDc5MDE0fQ.YtcKvqcuYfu8INnVXquxnCFYmL2yuoIOSAhy1CivEwg
