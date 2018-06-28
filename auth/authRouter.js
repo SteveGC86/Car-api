@@ -5,6 +5,9 @@ const {authenticate} = require('./authMiddleWare')
 const JWT = require('jsonwebtoken')
 
 router.post('/login', authenticate, (req, res) => {
+
+  console.log("LOGIN post")
+
   const payload = {
     bond: '007',
     ip: req.connection.remoteAddress
@@ -18,9 +21,10 @@ router.post('/login', authenticate, (req, res) => {
       res.status(401)
       throw new Error('Bad token')
     }
-
-    res.set('Authorization', `Bearer ${token}`)
-    res.status(200).send()
+    
+    res.set('AuthorXXXXXization', `Bearer ${token}`)
+    console.log(res)
+    res.status(200).json(token)
     
   })
 

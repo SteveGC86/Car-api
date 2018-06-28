@@ -4,6 +4,8 @@ const {authorize} = require('../auth/authMiddleware')
 
 router.get('/', authorize, (req, res) => {
 
+  console.log("CARS get")
+
   const cars = [
     {
       id: 1,
